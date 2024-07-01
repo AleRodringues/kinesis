@@ -18,6 +18,6 @@ export const products = [
         title: "BCAA (10:1:1) (200G) (EM PÓ) - GROWTH SUPPLEMENTS",
         description: " é a opção perfeita para quem deseja evolução nos treinos, como o ganho de massa muscular.",
         price: 50.40,
-        pictureUrl: "https://www.gsuplementos.com.br/upload/growth-layout-personalizado/produto/13/bcaa-10-1-1-growth-supplements.png",
+        pictureUrl: "https://a-static.mlcdn.com.br/450x450/bcaa-em-po-10-1-1-200g-growth-supplements/suplementosaz/7987154905/9e38dc5b83200f97dd4abe97d5296624.jpeg",
     },
 ];

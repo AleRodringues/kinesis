@@ -1,16 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './ItemListContainer.css';
-import ItemCount from './ItemCount';
+import ItemList from './ItemList';
+import { products } from './Data';
 
 const ItemListContainer = ({ greeting }) => {
-    const handleAdd = (quantity) => {
-        console.log(`Adicionado ${quantity} itens ao carrinho`);
-    };
+    const [items, setItems] = useState([]);
+
+    useEffect(() => {
+        const fetchItems = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve(products);
+            }, 2000);
+        });
+
+        fetchItems
+            .then((data) => {
+                setItems(data);
+            })
+            .catch((error) => {
+                console.error("Erro ao buscar os produtos: ", error);
+            });
+    }, []);
 
     return (
         <div className="item-list-container">
             <h2>{greeting}</h2>
-            <ItemCount stock={10} initial={1} onAdd={handleAdd} />
+            <ItemList items={items} />
         </div>
     );
 };
