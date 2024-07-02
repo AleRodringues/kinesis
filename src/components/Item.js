@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import ItemCount from './ItemCount';
 import './Item.css';
 
@@ -24,7 +25,9 @@ const Item = ({ id, title, description, price, pictureUrl, stock }) => {
         <Card.Text>Preço: R${price}</Card.Text>
         <Card.Text>Estoque disponível: {itemStock}</Card.Text>
         <ItemCount stock={itemStock} initial={1} onAdd={handleAdd} />
-        <Button variant="primary" className="mt-2">Mais detalhes</Button>
+        <Link to={`/item/${id}`}>
+          <Button variant="primary" className="mt-2">Mais detalhes</Button>
+        </Link>
       </Card.Body>
     </Card>
   );
