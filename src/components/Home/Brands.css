@@ -1,0 +1,17 @@
+.brands {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.brands-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.brands img {
+    max-width: 100px;
+    margin: 10px;
+}

@@ -1,0 +1,26 @@
+.discount-offers {
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.offer {
+    text-align: center;
+    background: #f1f1f1;
+    padding: 20px;
+    width: 150px;
+}
+
+.offer p {
+    margin: 10px 0;
+}
+
+.offer button {
+    padding: 10px;
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

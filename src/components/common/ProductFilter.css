@@ -1,0 +1,19 @@
+.product-filter {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.filter-category {
+    margin-bottom: 1rem;
+}
+
+.filter-category label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.filter-category select {
+    width: 100%;
+}

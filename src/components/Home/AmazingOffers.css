@@ -1,0 +1,42 @@
+.amazing-offers {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.offers-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.offer {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+.offer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.offer-details {
+    margin-top: 10px;
+}
+
+.offer-details p {
+    margin: 5px 0;
+}
+
+.offer-details button {
+    padding: 10px;
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

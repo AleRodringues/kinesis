@@ -1,21 +1,23 @@
 import React from 'react';
-import './App.css';
-import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
-import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import CartProvider from './components/Cart/CartContext';
+import HomePage from './components/Home/HomePage';
+import CartPage from './components/Cart/CartPage';
+import CheckoutPage from './components/Cart/CheckoutPage';
+import ProductDetailPage from './components/Product/ProductDetailPage';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <NavBar />
+    <CartProvider>
+      <Router>
         <Routes>
-          <Route path="/" element={<ItemListContainer greeting="Bem-vindo à Kinesis Sports!" />} />
-          <Route path="/item/:id" element={<ItemDetailContainer />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/product/:id" element={<ProductDetailPage />} />
         </Routes>
-      </div>
-    </Router>
+      </Router>
+    </CartProvider>
   );
 }
 
